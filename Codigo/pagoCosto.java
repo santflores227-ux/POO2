@@ -5,13 +5,12 @@ public class pagoCosto{
     double costo;
     int dia;
     boolean remarcado;
-    public pagoCosto(double costo,String descripcion,int dia){
+    Sistema sistema;
+    public pagoCosto(Sistema sistema,double costo,String descripcion,int dia){
         this.descripcion = descripcion;
         this.costo = costo;
         this.dia = dia;
-    }
-    public pagoCosto(double costo){
-        this.costo = costo;
+        this.sistema = sistema;
     }
     public void setRemarcado(boolean remarcado){
         this.remarcado = remarcado;
