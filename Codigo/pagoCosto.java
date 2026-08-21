@@ -22,4 +22,7 @@ public class pagoCosto{
     public void setDia(int dia){
         this.dia = dia;
     }
+    public void setDescripcion(String descripcion){
+        this.descripcion = descripcion;
+    }
 }
