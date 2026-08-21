@@ -2,15 +2,15 @@ package Codigo;
 
 public class pagoCosto{
     String descripcion;
-    int costo;
+    double costo;
     int dia;
     boolean remarcado;
-    public pagoCosto(int costo,String descripcion,int dia){
+    public pagoCosto(double costo,String descripcion,int dia){
         this.descripcion = descripcion;
         this.costo = costo;
         this.dia = dia;
     }
-    public pagoCosto(int costo){
+    public pagoCosto(double costo){
         this.costo = costo;
     }
     public void setRemarcado(boolean remarcado){
@@ -21,5 +21,8 @@ public class pagoCosto{
     }
     public void setDia(int dia){
         this.dia = dia;
+    }
+    public void setDescripcion(String descripcion){
+        this.descripcion = descripcion;
     }
 }
