@@ -5,12 +5,12 @@ public class pagoCosto{
     int costo;
     int dia;
     boolean remarcado;
-    public pagoCosto(int costo,String descripcion){
-        if (descripcion == null){
-            this.descripcion = "Sin descripcion";
-        } else {
-            this.descripcion = descripcion;
-        }
+    public pagoCosto(int costo,String descripcion,int dia){
+        this.descripcion = descripcion;
+        this.costo = costo;
+        this.dia = dia;
+    }
+    public pagoCosto(int costo){
         this.costo = costo;
     }
     public void setRemarcado(boolean remarcado){
