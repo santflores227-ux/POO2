@@ -23,14 +23,14 @@ Clientes de bases de datos: SQLite Studio
 
 Plan de documentación:
 	
-	Se creará un documento que detalla las necesidades y políticas del negocio (así como otros aspectos de relevancia provenientes de organizaciones con autoridad en el campo de despliegue **Organizaciones externas que se detallaran después) con respecto al proyecto actual de nombre Static Crane, dentro de un documento de Requerimiento de Negocios (RN-01).
+	Se creará un documento que detalla las necesidades y políticas del negocio (así como otros aspectos de relevancia provenientes de organizaciones con autoridad en el campo de despliegue **Organizaciones externas que se detallaran después) con respecto al proyecto actual de nombre Static Crane, dentro de un documento de Requerimiento de Negocios (DRN-01).
 
 	Consecuente se realizará la primera parte del documento de especificación de requerimientos de software (SRS) en donde se detallarán los puntos de la sección 1.
 
-	A continuación se recopilarán los requerimientos de usuario, y con la información recopilada se creará un documento por separado en el cual se detallarán a fondo cada uno de los casos de uso a utilizar (CU-01) así como el artefacto “Diagrama de Casos de Uso” (CU-02)
+	A continuación se recopilarán los requerimientos de usuario, y con la información recopilada se creará un documento por separado en el cual se detallarán a fondo cada uno de los casos de uso a utilizar (DCU-01) así como el artefacto “Diagrama de Casos de Uso” (DCU-02)
 
 	Una vez recompilados los casos de uso y creado el Diagrama de Casos de Uso, se usará el contenido de estos para continuar en la seccion 2. del SRS pertinente a los Requerimientos de Usuario.
 
-	Luego, se llevará a cabo la creación de un artefacto (diagrama de clases, actividades, estados etc.) donde se recompilen los requerimientos funcionales (Documento RF-01), los que una vez finalizados se compilará la información dentro de la sección 3. del SRS pertinente a los Requerimientos Funcionales.
+	Luego, se llevará a cabo la creación de un artefacto (diagrama de clases, actividades, estados etc.) donde se recompilen los requerimientos funcionales (Documento DRF-01), los que una vez finalizados se compilará la información dentro de la sección 3. del SRS pertinente a los Requerimientos Funcionales.
 	
-	Una vez completado el SRS hasta ese punto, se realizarán varios mockups que detallarán la apariencia que tendrá el programa una vez realizado, esto se guardará en un documento a parte llamado MU-01.
+	Una vez completado el SRS hasta ese punto, se realizarán varios mockups que detallarán la apariencia que tendrá el programa una vez realizado, esto se guardará en un documento a parte llamado DMU-01.
