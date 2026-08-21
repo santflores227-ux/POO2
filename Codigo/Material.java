@@ -1,3 +1,5 @@
+package Codigo;
+
 public class Material {
     private String nombre;
     private double precio;
@@ -18,6 +20,6 @@ public class Material {
         this.precio = nuevoPrecio;
     }
     public pagoCosto crearCosto(){
-        return new pagoCosto(null,this.precio,null);
+        return new pagoCosto(this.precio);
     }
 }
