@@ -4,10 +4,12 @@ import java.util.List;
 public class Sistema{
     List<Material> materiales;
     List<pagoCosto> pagos;
+    InterfazGrafica interfaz;
     //---------------------Constructor-------------------------------
     public Sistema(){
         materiales = new ArrayList<>();
         pagos = new ArrayList<>();
+        interfaz = new InterfazGrafica();
     }
    
     //---------------------Zona de pruebas----------------------
@@ -34,7 +36,7 @@ public class Sistema{
         materiales.add(material);
         material.setId(materiales.size()-1);
     }
-    public void actualizarCostoMaterial(Material material,int nuevoPrecio){
+    public void actualizarCostoMaterial(Material material,double nuevoPrecio){
         materiales.get(material.getId()).actualizarPrecio(nuevoPrecio);
     }
 
