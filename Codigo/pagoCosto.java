@@ -10,7 +10,11 @@ public class pagoCosto{
             this.descripcion = descripcion;
         }
         this.costo = costo;
-        this.dia = dia;
+        if(dia == null){
+            this.dia = 0;
+        } else {
+            this.dia = dia;
+        }
     }
     public void setRemarcado(boolean remarcado){
         this.remarcado = remarcado;
