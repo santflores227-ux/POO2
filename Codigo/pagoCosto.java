@@ -5,7 +5,7 @@ public class pagoCosto{
     int costo;
     int dia;
     boolean remarcado;
-    public pagoCosto(String descripcion, int costo){
+    public pagoCosto(int costo,String descripcion){
         if (descripcion == null){
             this.descripcion = "Sin descripcion";
         } else {

@@ -20,6 +20,6 @@ public class Material {
         this.precio = nuevoPrecio;
     }
     public pagoCosto crearCosto(){
-        return new pagoCosto(null,this.precio);
+        return new pagoCosto(this.precio);
     }
 }
