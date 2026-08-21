@@ -1,35 +1,41 @@
-package Codigo
+package Codigo;
+import java.util.ArrayList;
+import java.util.List;
 public class Sistema{
-    PagoCosto[] pagoCosto;
-    Material[] materiales;
+    List<Material> materiales;
+    List<pagoCosto> pagos;
+    //---------------------Constructor-------------------------------
     public Sistema(){
-        materiales = new Material[100];
-        pagoCosto = new PagoCosto[1000];
+        materiales = new ArrayList<>();
+        pagos = new ArrayList<>();
     }
+   
+    //---------------------Zona de pruebas----------------------
+
+
+    //---------------------Zona de pagos------------------------
+
     public void crearPagoCosto(double costo,String descripcion,int dia){
-        PagoCosto pago = new PagoCosto(this,costo,descripcion,dia);
+        pagoCosto pago = new pagoCosto(costo,descripcion,dia);
         agregarPagoCosto(pago);
     }
-    public void agregarPagoCosto(PagoCosto pago){
-        for(int i=0;i<pagoCosto.length;i++){
-            if(pagoCosto[i]==null){
-                pagoCosto[i] = pago;
-                break;
-            }
-        }
-        System.out.println("No hay mas espación para agregar pagos");
+    public void agregarPagoCosto(pagoCosto pago){
+        pagos.add(pago);
+        pago.setId(pagos.size()-1);
     }
+
+     //---------------------Zona de materiales------------------------
+
     public void crearMaterial(String nombre, double precio){
-        Material material = new Material(this,nombre,precio);
+        Material material = new Material(nombre,precio);
         agregarMaterial(material);
     }
     public void agregarMaterial(Material material){
-        for(int i=0;i<materiales.length;i++){
-            if(materiales[i]==null){
-                materiales[i] = material;
-                break;
-            }
-        }
-        System.out.println("No hay mas espación para agregar materiales");
+        materiales.add(material);
+        material.setId(materiales.size()-1);
     }
+    public void actualizarCostoMaterial(Material material,int nuevoPrecio){
+        materiales.get(material.getId()).actualizarPrecio(nuevoPrecio);
+    }
+
 }
