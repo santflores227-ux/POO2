@@ -1,4 +1,3 @@
-package Codigo;
 
 public class pagoCosto{
     private String descripcion;

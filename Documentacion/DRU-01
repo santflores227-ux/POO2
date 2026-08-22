@@ -1,5 +1,28 @@
 Documento de Requerimientos de Usuario
 
+----------------Gestion de obras----------------
 como administrador quiero poder crear nuevas obras para tener control de mi trabajo
-como administrador quiero poder ingresar costos a una obra para saber mis gastos
-como administrador quiero poder ingresar a una lista de empleados que trabajen en una obra para conocer al personal
+como administrador quiero poder asignar una obra como finalizada para tener un control de mis obras
+
+----------------Gestion de materiales----------------
+como administrador quiero poder crear nuevos materiales para acceder a ellos despues
+Como administrador quiero asignar cantidades de materiales a una obra para controlar el inventario y stock consumido.
+Como administrador quiero poder dar de baja materiales que ya no se utilizan para mantener el inventario actualizado
+
+----------------Gestion de empleados----------------
+como administrador quiero poder crear nuevos empleados para tener un control de mi personal
+como administrador quiero poder asignar empleados a una obra para saber quienes trabajan en ella
+como administrador quiero poder ver una lista de los empleados que trabajan en una obra para conocer al personal
+como administrador quiero poder modificar los datos de un empleado para mantener la informacion actualizada
+como administrador quiero poder dar de baja empleados que ya no trabajan en la empresa para mantener la informacion actualizada
+
+----------------Gestion de facturas----------------
+como administrador quiero poder crear nuevas facturas para tener un control de mis gastos
+como administrador quiero poder asignar facturas a un dia de trabajo para tener un control de mis gastos
+como administrador quiero poder ver las facturas de una semana de trabajo para tener un control de mis gastos
+como administrador quiero poder ver las facturas de todas las semanas de trabajo para tener un control de mis gastos
+como administrador quiero poder ver las facturas de todas las obras de trabajo para tener un control de mis gastos
+
+----------------Gestion de dias/Agenda----------------
+Como administrador quiero habilitar o inhabilitar días en el calendario para gestionar festivos, descansos y jornadas laborales activas.
+como administrador quiero habilitar o inhabilitar semanas en el calendario para gestionar festivos, descansos y jornadas laborales activas.
