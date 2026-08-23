@@ -10,11 +10,13 @@ Como administrador quiero asignar cantidades de materiales a una obra para contr
 Como administrador quiero poder dar de baja materiales que ya no se utilizan para mantener el inventario actualizado
 
 ----------------Gestion de empleados----------------
-como administrador quiero poder crear nuevos empleados para tener un control de mi personal
+como administrador quiero poder añadir nuevos empleados al sistema para tener un control de mi personal
 como administrador quiero poder asignar empleados a una obra para saber quienes trabajan en ella
 como administrador quiero poder ver una lista de los empleados que trabajan en una obra para conocer al personal
 como administrador quiero poder modificar los datos de un empleado para mantener la informacion actualizada
 como administrador quiero poder dar de baja empleados que ya no trabajan en la empresa para mantener la informacion actualizada
+como administrador quiero saber que empleados estan disponibles para asignar a una obra
+como administrador quiero ver a los empleados que estan disponibles cuando finaliza una obra
 
 ----------------Gestion de facturas----------------
 como administrador quiero poder crear nuevas facturas para tener un control de mis gastos
