@@ -19,15 +19,16 @@ Antecedentes
 
 4-Alcance del proyecto
 
-Dentro del Alcance (In-Scope):
+Dentro del Alcance :
 
     Módulo de gestión de obras (alta, baja lógica, cambio de estado).
     Módulo de catálogo y asignación de materiales por obra.
     Módulo de gestión y asignación de personal a cuadrillas.
-    Módulo de control de facturación y asignación a días hábiles/obras.
-    Generación de consultas y reportes de gastos acumulados.
+    Módulo de control de agenda.
+    Módulo de gestión de facturación.
+    
 
-Fuera del Alcance (Out-of-Scope): 
+Fuera del Alcance : 
 
     Integración automatizada con bancas en línea o facturación electrónica (CFDI).
     Aplicación móvil para los empleados en campo (se limita a la administración en escritorio).

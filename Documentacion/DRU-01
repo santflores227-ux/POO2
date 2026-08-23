@@ -3,6 +3,7 @@ Documento de Requerimientos de Usuario
 ----------------Gestion de obras----------------
 como dueño quiero poder crear nuevas obras para tener control de mi trabajo
 como dueño quiero poder asignar una obra como finalizada para tener un control de mis obras
+como dueño quiero poder observar el avanze de la obra de formal porcentual para tener un mejor control de tiempos
 
 ----------------Gestion de materiales----------------
 como dueño quiero poder crear nuevos materiales para acceder a ellos despues
