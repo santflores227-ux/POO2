@@ -1,0 +1,9 @@
+¿Como vamos a crear nuestro algoritmo?
+
+Analisis semantico.
+    El programa podra crear "Obras","Trabajadores","Facturas","Materiales" y "agendas", tambien podra modificar,acceder y eliminar estos mismos.
+        "Obras"
+        en las obras el programa podra añadir "Bla bla"
+
+
+dividimos la creación del algoritmo en modulos

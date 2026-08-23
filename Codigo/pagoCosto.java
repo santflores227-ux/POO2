@@ -1,4 +1,4 @@
-
+//La palabra pagoCosto se usa para definir una factura de un costo, o un pago que se recibio; Se utiliza esta palabra para no tener que utilizar "Facturación" para evitar confusiones con la facturación empresarial
 public class pagoCosto{
     private String descripcion;
     private double costo;
