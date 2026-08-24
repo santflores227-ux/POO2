@@ -1,0 +1,151 @@
+----------------Gestion de facturas----------------
+14-como dueño quiero poder crear nuevas facturas para tener un control de mis gastos
+15-como dueño quiero poder asignar facturas a un dia de trabajo para tener un control de mis gastos
+16-como dueño quiero poder ver las facturas de una semana de trabajo para tener un control de mis gastos
+17-como dueño quiero poder ver las facturas de todas las semanas de trabajo para tener un control de mis gastos
+18-como dueño quiero poder ver las facturas de todas las obras de trabajo para tener un control de mis gastos
+
+
+Identifdicador   | E-CU-14
+Nombre           | Crear factura
+Autor            | Santiago
+Fecha            | 20/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | La factura se crea exitosamente
+Flujo principal  | 1-El dueño selecciona la opciona de menu de facturas
+                 | 2-El sistema muestra la pantalla de facturas
+                 | 3-El dueño selecciona la opcion de crear factura
+                 | 4-El sistema muestra la pantalla de crear factura
+                 | 5-El dueño ingresa los datos de la factura
+                 | 6-El dueño selecciona la opcion de guardar factura
+                 | 7-El sistema guarda la factura y muestra un mensaje de exito
+Flujo alternativo| 5a-El sistema muestra un mensaje de error por datos invalidos y el dueño debe volver a ingresar los datos
+                 | se repite el flujo principal desde el paso 5
+Exepciones       | El sistema no puede guardar la factura por un error interno y muestra un mensaje de error, devuelve al dueño al paso 5 del flujo principal
+
+Identifdicador   | E-CU-15
+Nombre           | Asignar factura a día de trabajo
+Autor            | Santiago
+Fecha            | 20/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | La factura seleccionada se asigna al día de trabajo seleccionado
+Flujo principal  | 1-El dueño selecciona la opciona de menu de facturas
+                 | 2-El sistema muestra la pantalla de facturas
+                 | 3-El dueño selecciona la factura que desea asignar a un día de trabajo
+                 | 4-El sistema muestra la pantalla de asignar factura a día de trabajo
+                 | 5-El dueño selecciona la obra a la que desea asignar la factura
+                 | 6-El sistema muestra la pantalla de seleccionar semana de trabajo
+                 | 7-El dueño selecciona la semana de trabajo a la que desea asignar la factura
+                 | 8-El sistema muestra la pantalla de seleccionar día de trabajo
+                 | 9-El dueño selecciona el día de trabajo al que desea asignar la factura
+                 | 10-El sistema muestra un mensaje de confirmación de asignación de factura a día de trabajo
+                 | 11-El dueño confirma la asignación de la factura al día de trabajo
+                 | 12-El sistema asigna la factura al día de trabajo seleccionado y muestra un mensaje de éxito
+Flujo alternativo| 10a-El dueño cancela la asignación de la factura al día de trabajo
+                 | Se repite el flujo principal desde el paso 3
+Exepciones       | La factura seleccionada ya está asignada a un día de trabajo y el sistema muestra un mensaje de error, devuelve al dueño al paso 3 del flujo principal
+
+Identifdicador   | E-CU-16
+Nombre           | Administrar facturas de una semana de trabajo
+Autor            | Santiago
+Fecha            | 20/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | El dueño tendra acceso a una interfaz donde podra administrar las facturas de una semana de trabajo
+Flujo principal  | 1-El dueño selecciona la opcion de menu de obras
+                 | 2-El sistema muestra la pantalla de obras
+                 | 3-El dueño selecciona la obra de trabajo que desea administrar
+                 | 4-El sistema muestra la pantalla de semanas de trabajo
+                 | 5-El dueño selecciona la semana de trabajo que desea administrar
+                 | 6-El sistema muestra la pantalla de facturas de la semana de trabajo seleccionada junto con las opciones de administrar facturas
+                 | 7-El dueño hace los cambios necesarios en las facturas de la semana de trabajo seleccionada y selecciona la opcion de guardar cambios
+                 | 8-El sistema guarda los cambios realizados en las facturas de la semana de trabajo seleccionada y muestra un mensaje de éxito
+Flujo alternativo| 6a-El sistema muestra que no hay facturas registradas para la semana de trabajo seleccionada y muestra un menu de creación oasignación de facturas a la semana de trabajo seleccionada
+Exepciones       | El sistema no puede guardar los cambios realizados en las facturas de la semana de trabajo seleccionada por un error interno y muestra un mensaje de error, muestra el mensaje "Error al guardar, vuelva a intentarlo en unos minutos"
+
+Identifdicador   | E-CU-17
+Nombre           | Administrar facturas de todas las semanas de trabajo de una obra
+Autor            | Santiago
+Fecha            | 20/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | El dueño tendra acceso a una interfaz donde podra administrar las facturas de todas las semanas de trabajo de una obra
+Flujo principal  | 1-El dueño selecciona la opcion de menu de obras
+                 | 2-El sistema muestra la pantalla de obras
+                 | 3-El dueño selecciona la obra de trabajo que desea administrar
+                 | 4-El sistema muestra la pantalla de semanas de trabajo y las opciones de administrar facturas de todas las semanas de trabajo de la obra seleccionada
+                 | 5-El dueño hace los cambios necesarios en las facturas de todas las semanas de trabajo de la obra seleccionada (cu-16) y selecciona la opcion de guardar cambios
+                 | 6-El sistema guarda los cambios realizados en las facturas de todas las semanas de trabajo de la obra seleccionada y muestra un mensaje de éxito
+Flujo alternativo| 4a. Obra sin facturas registradas:
+                 |  1. El sistema detecta que no existen facturas asignadas en ninguna semana de la obra
+                 |  2. Despliega un mensaje informativo: "No hay facturas registradas para las semanas de esta obra"
+                 |  3. El sistema habilita botones de acceso directo para la creación o asignación de facturas
+Exepciones       | El sistema no puede guardar los cambios realizados en las facturas de todas las semanas de trabajo de la obra seleccionada por un error interno y muestra un mensaje de error, muestra el mensaje "Error al guardar, vuelva a intentarlo en unos minutos"
+
+Identifdicador   | E-CU-18
+Nombre           | Administrar facturas de todas las obras de trabajo
+Autor            | Santiago
+Fecha            | 20/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | El dueño tendra acceso a una interfaz donde podra administrar las facturas de todas las obras de trabajo
+Flujo principal  | 1-El dueño selecciona la opcion de menu de obras
+                 | 2-El sistema muestra la pantalla de obras con una lista de todas las obras de trabajo registradas y las opciones de administrar facturas de todas las obras de trabajo  
+                 | 3-El dueño hace los cambios necesarios en las facturas de todas las obras de trabajo (cu-17) y selecciona la opcion de guardar cambios
+                 | 4-El sistema guarda los cambios realizados en las facturas de todas las obras de trabajo y muestra un mensaje de éxito
+Flujo alternativo| 2a- Obras sin facturas registradas:
+                 |  1. El sistema detecta que no existen facturas asignadas en ninguna de las obras
+                 |  2. Despliega un mensaje informativo: "No hay facturas registradas para las obras de trabajo"
+                 |  3. El sistema habilita botones de acceso directo para la creación o asignación de facturas en lsa obras de trabajo
+Exepciones       | El sistema detecta que no hay ninguna obra registrada y muestra un mensaje de error, muestra el mensaje "No hay obras registradas, por favor registre una obra para poder administrar sus facturas" (CU-01)
+
+----------------Gestion de dias/Agenda----------------
+Como dueño quiero habilitar o inhabilitar días en el calendario para gestionar festivos, descansos y jornadas laborales activas.
+como dueño quiero habilitar o inhabilitar semanas en el calendario para gestionar festivos, descansos y jornadas laborales activas.
+
+Identifdicador   | E-CU-19
+Nombre           | Gestionar días en el calendario
+Autor            | Santiago
+Fecha            | 20/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | El dueño tendra acceso a una interfaz que el permita administrar un día en el calendario
+Flujo principal  | 1-El dueño selecciona la opcion de menu de obras
+                 | 2-El sistema muestra la pantalla de obras con una lista de todas las obras de trabajo registradas
+                 | 3-El dueño selecciona la obra de trabajo que desea administrar
+                 | 4-El sistema muestra la pantalla de semanas de trabajo con una lista de todas las semanas de trabajo registradas para la obra seleccionada
+                 | 5-El dueño selecciona la semana de trabajo que desea administrar
+                 | 6-El sistema muestra la pantalla de días de trabajo con una lista de todos los días de trabajo registrados para la semana seleccionada
+                 | 7-El dueño selecciona el día de trabajo que desea administrar
+                 | 8-El sistema muestra la pantalla del dia con las opciones de administración (Habilitar,inhabilitar, ver facturas asignadas, ver trabajadores asignados, ver materiales asignados)
+                 | 9-El dueño selecciona la opción que desea realizar y da click en el botón de guardar cambios
+                 | 10-El sistema guarda los cambios realizados en el día de trabajo seleccionado y muestra un mensaje de éxito
+Flujo alternativo| 8a-El sistema detecta que no hay información registrada para el día de trabajo seleccionado y muestra un mensaje de información, muestra el mensaje "No hay información registrada para el día de trabajo seleccionado, por favor registre la información necesaria para poder administrar el día de trabajo" y muestra las opociones de registro en los modulos corresponcientes
+Exepciones       | El sistema no puede sincronizar los cambios realizados en el día de trabajo seleccionado por un error interno y muestra un mensaje de error, muestra el mensaje "Error al guardar, vuelva a intentarlo en unos minutos"
+
+Identifdicador   | E-CU-20
+Nombre           | gestionar semanas en el calendario
+Autor            | Santiago
+Fecha            | 20/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | El dueño tendra acceso a una interfaz que le permita administrar una semana en el calendario
+Flujo principal  | 1-El dueño selecciona la opcion de menu de obras
+                 | 2-El sistema muestra la pantalla de obras con una lista de todas las obras de trabajo registradas
+                 | 3-El dueño selecciona la obra de trabajo que desea administrar
+                 | 4-El sistema muestra la pantalla de semanas de trabajo con una lista de todas las semanas de trabajo registradas para la obra seleccionada
+                 | 5-El dueño selecciona la semana de trabajo que desea administrar
+                 | 6-El sistema muestra la pantalla de la semana con las opciones de administración (Habilitar,inhabilitar, ver días de trabajo, ver facturas asignadas, ver trabajadores asignados, ver materiales asignados)
+                 | 7-El dueño selecciona la opción que desea realizar y da click en el botón de guardar cambios
+                 | 8-El sistema guarda los cambios realizados en la semana de trabajo seleccionada y muestra
+Flujo alternativo| 6a-El sistema detecta que no hay información registrada para la semana de trabajo seleccionada y muestra un mensaje de información, muestra el mensaje "No hay información registrada para la semana de trabajo seleccionada, por favor registre la información necesaria para poder administrar la semana de trabajo" y muestra las opociones de registro en los modulos corresponcientes
+Exepciones       | El sistema no puede sincronizar los cambios realizados en la semana de trabajo seleccionada por un error interno y muestra un mensaje de error, muestra el mensaje "Error al guardar, vuelva a intentarlo en unos minutos"
