@@ -3,7 +3,28 @@
 Analisis semantico.
     El programa podra crear "Obras","Trabajadores","Facturas","Materiales" y "agendas", tambien podra modificar,acceder y eliminar estos mismos.
         "Obras"
-        en las obras el programa podra añadir "Bla bla"
+        
+    El pograma iniciara en un menu principal que muestre una mensaje de bienvenida y tres menus
+        -Obras
+            AL inicar el menu de obras se mostra a la izquierda una lista de las obras, a la derecha una lista de opciones para crear una obra y sus parametros
+            al seleccionar una obra permitira "ingresar","editar datos","finalizar","eliminar"
+            cuando se ingrese a una obra:
+                Se desplegara del lado izquierdo una lista de empleados, una lista de materiales y una lista de Facturas
+                Del lado derecho estara la sección de calendario
+                calendario:
+                    Se desplegara una lista de izquierda a derecha con las semanas del proyecto, hasta la derecha existira un modulo que indique gastos,pagos,margen, y opciones de agregar una semana
+                    Cuando se de click en una semana se desplegara un menu de opciones que muestre "Editar datos","Acceder a los datos","Habilitar semana o inHabilitar" entre otras opciones a definir
+                    Al abrir la semana se recreara esta misma secuencia de interfas y usabilidad pero con los 7 dias.
+                    Cada dia tendra una lista de trabajadores,materiales,facturas, costos,pagos y margen
+        -Materiales
+            al inicar se desplegara una lista del lado izquierdo con los materiales, al lado derecho existira un modulo de creación de nuevo material
+            al dar click en un material se tendra la opcion de modificarlo y eliminarlo.
+        -Empleados
+            al inicar se desplegara una lista del lado izquierdo con los empleados, al lado derecho existira un modulo para agregar a un empleado
+            Al dar click en un empleado se podra acceder a su información, modificarla y dar de baja al empleado
+        -Facturas
+            lo mismo que los modulos de materileas y empleados
+            pero con la diferencia que al crear una factura nueva se tiene la posibilidad de enlazarla a un dia de una obra seleccionada
 
 
 dividimos la creación del algoritmo en modulos
