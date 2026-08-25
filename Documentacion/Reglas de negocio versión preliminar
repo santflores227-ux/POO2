@@ -1,0 +1,67 @@
+Reglas de negocio
+
+Trazlado
+	Un empleado puede ser trazladado de una obra a otra
+	Los dias que se trabajen en una obra no se traladaran a la otra obra en la que sea asignado, en la otra obra empezaran de nuevo sus dias (Se dividiran los dias de la semana dependiendo de las obras en las que haya efectuado trabajo).
+
+
+	trabajador 
+	nombre
+	contacto
+	oficio
+	obra
+	salario
+     |
+	Trabajador independiente
+	tiene un pago final ya establecido
+	tiene objetivos de rendimiento que tiene que complir para su pago exitoso
+	¿como se le va a pagar?
+	cuando un objetivo sea complido se le asignara el monto proporcial correspondiente.
+
+	tI
+	1000
+	OB
+	lamparas-300
+	sillones-600
+	paredes-100
+	Opcion de agregado de conceptos de trabajo
+
+	facturas-TI
+	monto total
+	conceptos por acabar
+	conceptos por agregar
+		cuando se agregen conceptos se aumenta el monto total
+
+
+	FACTURA-incompleta
+		monto total-1000
+		lamparas(300)-aun sin acabar
+		sillones(600)-acabado
+		paredes(100)-sin acabar
+
+		total pagado-(600)
+		total por pagar(400)
+		agregar conceptos
+
+		finalizar factura
+
+los dias festivos no se trabaja
+
+
+lista de facturas
+
+facturas obra tal
+
+facturas de la otra obra
+
+
+lista de materiales
+
+concreto
+	100 por bulto
+	opcion de creación de factura
+		10 un
+			1000
+		mostrar una lista de obras
+			desglara una agenda de semanas
+acero
