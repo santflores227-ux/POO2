@@ -1,10 +1,11 @@
-package Codigo;
+
 import java.util.ArrayList;
 import java.util.List;
 public class Sistema{
     List<Material> materiales;
     List<pagoCosto> pagos;
     InterfazGrafica interfaz;
+
     //---------------------Constructor-------------------------------
     public Sistema(){
         materiales = new ArrayList<>();
@@ -14,7 +15,7 @@ public class Sistema{
    
     //---------------------Zona de pruebas----------------------
 
-
+    
     //---------------------Zona de pagos------------------------
 
     public void crearPagoCosto(double costo,String descripcion,int dia){

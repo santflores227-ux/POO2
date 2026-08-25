@@ -1,5 +1,31 @@
 Documento de Requerimientos de Usuario
 
-como administrador quiero poder crear nuevas obras para tener control de mi trabajo
-como administrador quiero poder ingresar costos a una obra para saber mis gastos
-como administrador quiero poder ingresar a una lista de empleados que trabajen en una obra para conocer al personal
+----------------Gestion de obras----------------
+como dueño quiero poder crear nuevas obras para tener control de mi trabajo
+como dueño quiero poder asignar una obra como finalizada para tener un control de mis obras
+como dueño quiero poder observar el avanze de la obra de formal porcentual para tener un mejor control de tiempos
+
+----------------Gestion de materiales----------------
+como dueño quiero poder crear nuevos materiales para acceder a ellos despues
+Como dueño quiero asignar cantidades de materiales a una obra para controlar el inventario y stock consumido.
+Como dueño quiero poder dar de baja materiales que ya no se utilizan para mantener el inventario actualizado
+
+----------------Gestion de empleados----------------
+como dueño quiero poder añadir nuevos empleados al sistema para tener un control de mi personal
+como dueño quiero poder asignar empleados a una obra para saber quienes trabajan en ella
+como dueño quiero poder ver una lista de los empleados que trabajan en una obra para conocer al personal
+como dueño quiero poder modificar los datos de un empleado para mantener la informacion actualizada
+como dueño quiero poder dar de baja empleados que ya no trabajan en la empresa para mantener la informacion actualizada
+como dueño quiero saber que empleados estan disponibles para asignar a una obra
+como dueño quiero ver a los empleados que estan disponibles cuando finaliza una obra
+
+----------------Gestion de facturas----------------
+como dueño quiero poder crear nuevas facturas para tener un control de mis gastos
+como dueño quiero poder asignar facturas a un dia de trabajo para tener un control de mis gastos
+como dueño quiero poder ver las facturas de una semana de trabajo para tener un control de mis gastos
+como dueño quiero poder ver las facturas de todas las semanas de trabajo para tener un control de mis gastos
+como dueño quiero poder ver las facturas de todas las obras de trabajo para tener un control de mis gastos
+
+----------------Gestion de dias/Agenda----------------
+Como dueño quiero habilitar o inhabilitar días en el calendario para gestionar festivos, descansos y jornadas laborales activas.
+como dueño quiero habilitar o inhabilitar semanas en el calendario para gestionar festivos, descansos y jornadas laborales activas.
