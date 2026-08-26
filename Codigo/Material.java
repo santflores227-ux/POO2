@@ -4,7 +4,6 @@ public class Material {
     private String nombre;
     private double precio;
     private int id;
-
     public Material(String nombre, double precio) {
         this.nombre = nombre;
         this.precio = precio;

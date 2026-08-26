@@ -1,14 +1,20 @@
-//La palabra pagoCosto se usa para definir una factura de un costo, o un pago que se recibio; Se utiliza esta palabra para no tener que utilizar "Facturación" para evitar confusiones con la facturación empresarial
-public class pagoCosto{
+public class PagoCosto{
+    private String nombre;
     private String descripcion;
     private double costo;
     private int dia;
     private boolean remarcado;
     private int id;
-    public pagoCosto(double costo,String descripcion,int dia){
+    public PagoCosto(String nombre, double costo, String descripcion){
         this.descripcion = descripcion;
         this.costo = costo;
-        this.dia = dia;
+        this.nombre = nombre;
+    }
+    public String getNombre(){
+        return nombre;
+    }
+    public void setNombre(String nombreNuevo){
+        this.nombre = nombreNuevo;
     }
     public void setRemarcado(boolean remarcado){
         this.remarcado = remarcado;
