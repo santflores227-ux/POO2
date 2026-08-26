@@ -107,8 +107,8 @@ Flujo alternativo| 2a- Obras sin facturas registradas:
 Exepciones       | El sistema detecta que no hay ninguna obra registrada y muestra un mensaje de error, muestra el mensaje "No hay obras registradas, por favor registre una obra para poder administrar sus facturas" (CU-01)
 
 ----------------Gestion de dias/Agenda----------------
-Como dueño quiero habilitar o inhabilitar días en el calendario para gestionar festivos, descansos y jornadas laborales activas.
-como dueño quiero habilitar o inhabilitar semanas en el calendario para gestionar festivos, descansos y jornadas laborales activas.
+19-Como dueño quiero habilitar o inhabilitar días en el calendario para gestionar festivos, descansos y jornadas laborales activas.
+20-como dueño quiero habilitar o inhabilitar semanas en el calendario para gestionar festivos, descansos y jornadas laborales activas.
 
 Identifdicador   | E-CU-19
 Nombre           | Gestionar días en el calendario
@@ -149,3 +149,95 @@ Flujo principal  | 1-El dueño selecciona la opcion de menu de obras
                  | 8-El sistema guarda los cambios realizados en la semana de trabajo seleccionada y muestra
 Flujo alternativo| 6a-El sistema detecta que no hay información registrada para la semana de trabajo seleccionada y muestra un mensaje de información, muestra el mensaje "No hay información registrada para la semana de trabajo seleccionada, por favor registre la información necesaria para poder administrar la semana de trabajo" y muestra las opociones de registro en los modulos corresponcientes
 Exepciones       | El sistema no puede sincronizar los cambios realizados en la semana de trabajo seleccionada por un error interno y muestra un mensaje de error, muestra el mensaje "Error al guardar, vuelva a intentarlo en unos minutos"
+
+----------------Gestion Tabajadores independientes----------------------
+21-Como dueño quiero poder añadir tabrajadores independientes a mis obras
+22-Como dueño quiero poder ver una lista de TI y ver a que obras estan asignados
+23-como dueño quiero poder ver las facturas de los trabajadores independientes.
+24-como dueño quiero añadir mas conceptos de trabajo a las facturas de los trabajadores independientes
+
+Identifdicador   | E-CU-21
+Nombre           | Añadir trabajadores independientes
+Autor            | Santiago
+Fecha            | 26/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema y tener rol de dueño activo
+Postcondiciónes  | EL trabajor independiente quedara registrado en el sistema
+Flujo principal  | 1-El dueño selecciona la opcion de lista de trabajadores
+                 | 2-El sistema muestra la interfaz de trabajadores
+                 | 3-El dueño selecciona la opcion de lista de TI
+                 | 4-El sistema muestra la interfaz de TI
+                 | 5-El dueño selecciona la opcion de creación de TI
+                 | 6-El sistema muestra el formulario de creación de TI
+                 | 7-El dueño ingresa los datos y selecciona guardar
+                 | 8-El sistema guarda los datos y crea un nuevo TI
+                 | 9-El sistema crea una factura de TI con los datos guardados
+Flujo alternativo| 8a-El sistema detecta error en los parametros
+                 | -El sistema detecta que un parametro no ha sido llenado correctamente
+                 | -El sistema muestra un mensaje de error, pidiendo que los parametros sea llenados de forma correcta
+                 | -Se devuelve al flujo principal al paso 6
+Exepciones       | El sistema no puede guardar los datos debido a un error interno, muestra el mensaje, "Error al guardar los datos, vuelva a intentarlo en unos minutos"
+
+Identifdicador   | E-CU-21
+Nombre           | Ver lista de trabajadores independientes
+Autor            | Santiago
+Fecha            | 26/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | El Sistema despliega la lista actualizada de Trabajadores Independientes (TI) registrados.
+Flujo principal  | 1-El dueño selecciona la opcion de lista de trabajadores
+                 | 2-El sistema muestra la interfaz de trabajadores
+                 | 3-El dueño selecciona la opcion de lista de trabajadores independientes
+                 | 4-El sistema muestra la interfaz de trabajadores independientes
+Flujo alternativo| 4a-El sistema detecta que no hay trabajadores independientes registrados
+                 | -El sistema muestra el formulario de creación de TI (CU-20)
+Exepciones       | El Sistema no puede recuperar la lista debido a un fallo en la red o base de datos.
+                 | El Sistema muestra el mensaje: "Error al cargar la lista de trabajadores independientes. Intente de nuevo más tarde".
+                 | El caso de uso finaliza.
+
+Identifdicador   | E-CU-21
+Nombre           | Ver facturas de los trabajadores independientes
+Autor            | Santiago
+Fecha            | 26/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | El sistema desplegara la lista de facturas de tabrajadores independientes
+Flujo principal  | 1-El dueño selecciona la opcion de lista de facturas
+                 | 2-El sistema muestra la interfaz de facturas
+                 | 3-El dueño selecciona la opcion de lista de facturas TI
+                 | 4-El sistema muestra la interfas de facturas TI
+Flujo alternativo| 4b-EL sistema detecta que no hay facturas de TI
+                 | -El sistema redirige a la sección de creación de TI (CU-20)
+Exepciones       | El Sistema no puede recuperar la lista debido a un fallo en la red o base de datos.
+                 | El Sistema muestra el mensaje: "Error al cargar la lista de trabajadores independientes. Intente de nuevo más tarde".
+                 | El caso de uso finaliza.
+
+Identifdicador   | E-CU-22
+Nombre           | Añadir conceptos de trabajo a las facturas de los TI
+Autor            | Santiago
+Fecha            | 26/06/2024
+Actor principal  | Dueño
+Actor secundario | Sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema
+Postcondiciónes  | El sistema añadira nuevos conceptos en la factura TI que sea seleccionada y en el TI correspondiente
+Flujo principal  | 1-El dueño selecciona la opcion de lista de facturas
+                 | 2-El sistema muestra la interfaz de facturas
+                 | 3-El dueño selecciona la opcion de lista de facturas TI
+                 | 4-El sistema muestra la interfas de facturas TI
+                 | 5-El dueño selecciona la factura que desea modificar
+                 | 6-El sistema muestra la interfaz de la factura
+                 | 7-El dueño selecciona la opcion de agregar concepto
+                 | 8-El sistema muestra el formulario de concepto
+                 | 9-El dueño ingresa la información en los campos y selecciona guardar
+                 | 10-El sistema guarda la información
+                 | 11-El sistema modifica la factura seleccionada y añade el nuevo concepto
+                 | 12-El sistema modifica al TI que este enlazado con la factura
+Flujo alternativo| 10a-El sistema detecta error en los parametros guardados
+                 | -El sistema muestra mensaje de error de llenado de información
+                 | -El sistema regresa al paso 8 de flujo principal
+Exepciones       | El Sistema no puede recuperar la lista debido a un fallo en la red o base de datos.
+                 | El Sistema muestra el mensaje: "Error al cargar la lista de trabajadores independientes. Intente de nuevo más tarde".
+                 | El caso de uso finaliza.

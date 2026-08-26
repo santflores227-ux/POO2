@@ -1,4 +1,6 @@
-Documento de SRS primera versión:
+# Documento de SRS primera versión:
+
+## 1. Introducción
 
 1.1 Propósito
 
@@ -13,4 +15,20 @@ La creacion de este programa se debe a que la compañia busca una forma más efi
 1.5 Referencias
 
 1.6 Resumen
+
+
+
+## 2. Descripción general
+
+2.1 Perspectiva del producto
+    El sistema (SIS-1) Será un programa diseñado para la funcionalidad en el entorno del dispositivo de elección del Administrador o dueño, para facilitar y agilizar la administración de los recursos y proyectos de la empresa.
+
+2.2 Funcionalidad del producto
+    <img src="Diagramas/DiagramaCU-01.png">
+
+2.3 Características de los usuarios
+
+2.4 Restricciones
+
+2.5 Suposiciones y dependencias
 ...

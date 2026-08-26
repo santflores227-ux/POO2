@@ -1,7 +1,7 @@
 Reglas de negocio
 
 Trazlado
-	Un empleado puede ser trazladado de una obra a otra
+	RN-01 Un empleado puede ser trazladado de una obra a otra
 	Los dias que se trabajen en una obra no se traladaran a la otra obra en la que sea asignado, en la otra obra empezaran de nuevo sus dias (Se dividiran los dias de la semana dependiendo de las obras en las que haya efectuado trabajo).
 
 
@@ -12,7 +12,7 @@ Trazlado
 	obra
 	salario
      |
-	Trabajador independiente
+	RN-02 Trabajador independiente
 	tiene un pago final ya establecido
 	tiene objetivos de rendimiento que tiene que complir para su pago exitoso
 	¿como se le va a pagar?
@@ -26,7 +26,7 @@ Trazlado
 	paredes-100
 	Opcion de agregado de conceptos de trabajo
 
-	facturas-TI
+	RN-03 facturas-TI
 	monto total
 	conceptos por acabar
 	conceptos por agregar
@@ -45,7 +45,7 @@ Trazlado
 
 		finalizar factura
 
-los dias festivos no se trabaja
+RN-04 los dias festivos no se trabaja
 
 
 lista de facturas

@@ -3,14 +3,12 @@ import java.util.ArrayList;
 import java.util.List;
 public class Sistema{
     List<Material> materiales;
-    List<pagoCosto> pagos;
-    InterfazGrafica interfaz;
+    List<PagoCosto> pagos;
 
     //---------------------Constructor-------------------------------
     public Sistema(){
         materiales = new ArrayList<>();
         pagos = new ArrayList<>();
-        interfaz = new InterfazGrafica();
     }
    
     //---------------------Zona de pruebas----------------------
@@ -18,11 +16,11 @@ public class Sistema{
     
     //---------------------Zona de pagos------------------------
 
-    public void crearPagoCosto(double costo,String descripcion,int dia){
-        pagoCosto pago = new pagoCosto(costo,descripcion,dia);
+    public void crearPagoCosto(String nombre, double costo,String descripcion){
+        PagoCosto pago = new PagoCosto(nombre,costo,descripcion);
         agregarPagoCosto(pago);
     }
-    public void agregarPagoCosto(pagoCosto pago){
+    public void agregarPagoCosto(PagoCosto pago){
         pagos.add(pago);
         pago.setId(pagos.size()-1);
     }
@@ -39,6 +37,12 @@ public class Sistema{
     }
     public void actualizarCostoMaterial(Material material,double nuevoPrecio){
         materiales.get(material.getId()).actualizarPrecio(nuevoPrecio);
+    }
+    public List<Material> getMateriales(){
+        return materiales;
+    }
+    public List<PagoCosto> getFacturas(){
+        return pagos;
     }
 
 }
