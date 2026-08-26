@@ -29,3 +29,9 @@ como dueño quiero poder ver las facturas de todas las obras de trabajo para ten
 ----------------Gestion de dias/Agenda----------------
 Como dueño quiero habilitar o inhabilitar días en el calendario para gestionar festivos, descansos y jornadas laborales activas.
 como dueño quiero habilitar o inhabilitar semanas en el calendario para gestionar festivos, descansos y jornadas laborales activas.
+
+----------------Gestion Tabajadores independientes----------------------
+Como dueño quiero poder añadir tabrajadores independientes a mis obras
+Como dueño quiero poder ver una lista de TI y ver a que obras estan asignados
+como dueño quiero poder ver las facturas de los trabajadores independientes.
+como dueño quiero añadir mas conceptos de trabajo a las facturas de los trabajadores independientes
