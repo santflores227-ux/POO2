@@ -17,7 +17,6 @@ como dueño quiero poder ver una lista de los empleados que trabajan en una obra
 como dueño quiero poder modificar los datos de un empleado para mantener la informacion actualizada
 como dueño quiero poder dar de baja empleados que ya no trabajan en la empresa para mantener la informacion actualizada
 como dueño quiero saber que empleados estan disponibles para asignar a una obra
-como dueño quiero ver a los empleados que estan disponibles cuando finaliza una obra
 
 ----------------Gestion de facturas----------------
 como dueño quiero poder crear nuevas facturas para tener un control de mis gastos
