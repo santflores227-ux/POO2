@@ -27,8 +27,21 @@ La creacion de este programa se debe a que la compañia busca una forma más efi
     <img src="Diagramas/DiagramaCU-01.png">
 
 2.3 Características de los usuarios
-
+    
+    | Tipo de usuario | Administrador |
+    | Formación | Conocimiento de la empresa |
+    | Actividades | Control y manejo del sistema en general |
+    
 2.4 Restricciones
 
+    - La interfaz debe tener acceso a la base de datos.
+    - Debe de accederse por medio del dispositivo de elección del dueño o administrador
+    - Lenguaje y tecnologias en uso: JAVA
+
 2.5 Suposiciones y dependencias
+
+    - El dispositivo que ejecutará el sistema cumplirá con los requisitos para una ejecución sin complicaciones
+    - Se asume que el usuario del sistema será el único autorizado para el uso del sistema**
+    - Se asume que los requisitos descritos son estables.
+
 ...
