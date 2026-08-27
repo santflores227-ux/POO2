@@ -51,7 +51,7 @@ El sistema (SIS-1) Será un programa diseñado para la funcionalidad en el entor
 
 ## 3. Requisitos Especificos
 
-        Requerimientos funcionales
+ Requerimientos funcionales
 
 | Campo | Detalle |
 | :------------ | ------------- |
@@ -100,7 +100,7 @@ El sistema (SIS-1) Será un programa diseñado para la funcionalidad en el entor
 
 ...
 
-        Requerimientos No Funcionales
+Requerimientos No Funcionales
     
 | Campo | Detalle |
 | :------------ | ------------- |
