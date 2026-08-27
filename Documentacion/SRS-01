@@ -26,7 +26,7 @@ El sistema (SIS-1) Será un programa diseñado para la funcionalidad en el entor
 
 2.2 Funcionalidad del producto
 
-<img src="Diagramas/DiagramaCU-01.png">
+<img src="Diagramas/DiagramaCU-01.png" width="50%">
 
 2.3 Características de los usuarios
     
@@ -60,6 +60,78 @@ El sistema (SIS-1) Será un programa diseñado para la funcionalidad en el entor
 |Caracteristicas||
 |Descripción del Requerimiento||
 |Requerimiento No Funcional||
+|Prioridad del Requerimiento: |
+
+| Campo | Detalle |
+| :------------ | ------------- |
+|Identificador del requerimiento|RF02|
+|Nombre del Requerimiento||
+|Caracteristicas||
+|Descripción del Requerimiento||
+|Requerimiento No Funcional||
+|Prioridad del Requerimiento: |
+
+| Campo | Detalle |
+| :------------ | ------------- |
+|Identificador del requerimiento|RF03|
+|Nombre del Requerimiento||
+|Caracteristicas||
+|Descripción del Requerimiento||
+|Requerimiento No Funcional||
+|Prioridad del Requerimiento: |
+
+| Campo | Detalle |
+| :------------ | ------------- |
+|Identificador del requerimiento|RF04|
+|Nombre del Requerimiento||
+|Caracteristicas||
+|Descripción del Requerimiento||
+|Requerimiento No Funcional||
+|Prioridad del Requerimiento: |
+
+| Campo | Detalle |
+| :------------ | ------------- |
+|Identificador del requerimiento|RF05|
+|Nombre del Requerimiento||
+|Caracteristicas||
+|Descripción del Requerimiento||
+|Requerimiento No Funcional||
+|Prioridad del Requerimiento: |
+
+...
+
+        Requerimientos No Funcionales
+    
+| Campo | Detalle |
+| :------------ | ------------- |
+|Identificador del requerimiento|RNF01|
+|Nombre del Requerimiento||
+|Caracteristicas||
+|Descripción del Requerimiento||
+|Prioridad del Requerimiento: |
+
+| Campo | Detalle |
+| :------------ | ------------- |
+|Identificador del requerimiento|RNF02|
+|Nombre del Requerimiento||
+|Caracteristicas||
+|Descripción del Requerimiento||
+|Prioridad del Requerimiento: |
+
+| Campo | Detalle |
+| :------------ | ------------- |
+|Identificador del requerimiento|RNF03|
+|Nombre del Requerimiento||
+|Caracteristicas||
+|Descripción del Requerimiento||
+|Prioridad del Requerimiento: |
+
+| Campo | Detalle |
+| :------------ | ------------- |
+|Identificador del requerimiento|RNF04|
+|Nombre del Requerimiento||
+|Caracteristicas||
+|Descripción del Requerimiento||
 |Prioridad del Requerimiento: |
 
 
