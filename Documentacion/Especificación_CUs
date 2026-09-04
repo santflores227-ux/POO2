@@ -31,7 +31,7 @@ Autor            | Santiago
 Fecha            | 20/06/2024
 Actor principal  | Dueño
 Actor secundario | Sistema
-Precondiciónes   | El dueño debe estar logueado en el sistema
+Precondiciónes   | El dueño debe estar logueado en el sistema 
 Postcondiciónes  | La factura seleccionada se asigna al día de trabajo seleccionado
 Flujo principal  | 1-El dueño selecciona la opciona de menu de facturas
                  | 2-El sistema muestra la pantalla de facturas
