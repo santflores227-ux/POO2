@@ -1,0 +1,21 @@
+# Compilación y ejecutables de Java
+*.class
+*.jar
+*.war
+/bin/
+/build/
+/target/
+
+# Entornos e IDEs
+.vscode/
+.idea/
+*.iml
+
+# Bases de datos locales
+*.db
+*.sqlite
+*.sqlite3
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
