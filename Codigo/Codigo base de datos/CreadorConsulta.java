@@ -29,7 +29,7 @@ public class CreadorConsulta{
 		return consultaSQL;
 	}
 	public String consultaEliminar(String nombreTabla){
-		String consultaqlS = "DROP TABLE " + nombreTabla;
+		String consultaqlS = "DROP TABLE \"" + nombreTabla+"\"";
 		return consultaqlS;
 	}
 	public String consultaED(

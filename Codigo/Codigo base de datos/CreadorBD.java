@@ -218,17 +218,12 @@ public class CreadorBD {
 	public void insertarDato(){
     System.out.println("Ingrese el nombre de la tabla en la que desea añadir un dato:");
     String nombreTabla = teclado.nextLine();
-
-    // 1. Obtener los nombres de los 4 campos guardados en TablaDeTablas
     String[] campos = buscarCampos(nombreTabla);
-
-    // Verificar si la tabla existe antes de pedir valores
     if (campos[0] == null) {
         System.out.println("No es posible insertar datos porque la tabla no existe.");
         return;
     }
 
-    // 2. Solicitar los valores para cada campo al usuario
     System.out.println("Ingrese el valor para " + campos[0] + ":");
     String valor1 = teclado.nextLine();
 
@@ -240,15 +235,12 @@ public class CreadorBD {
 
     System.out.println("Ingrese el valor para " + campos[3] + ":");
     String valor4 = teclado.nextLine();
-
-    // 3. Crear la consulta SQL de inserción
     String sqlInsert = consulta.consultaInsert(
         nombreTabla,
         campos[0], campos[1], campos[2], campos[3],
         valor1,valor2,valor3,valor4
     );
 
-    // 4. Guardar en la base de datos
     añadidor.añadirDato(sqlInsert);
 	}
 	public void eliminarTabla(){
@@ -260,7 +252,7 @@ public class CreadorBD {
 			String consultaT =consulta.consultaEliminar(respuesta);
 			terminator.eliminar(consultaT);
 			eliminarTabladeTT(respuesta);
-			System.out.println("Hasta la vista"+respuesta+"...");
+			System.out.println("Hasta la vista "+respuesta+"...");
 		}else{
 			System.out.println("Regresando al menu ...");
 		}
